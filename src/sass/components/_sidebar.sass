@@ -1,0 +1,95 @@
+.sidebar
+    border: 1px solid rgba($silver, .5)
+    position: relative
+    +md 
+        margin-top: 30px
+        border: none
+    &_cabinet
+        +md 
+            margin-top: 0
+            border: 1px solid rgba($silver, .5)
+            border: none
+    &__title
+        position: relative
+        z-index: 1
+        display: inline-block
+        vertical-align: top
+        padding: 0 24px 0 10px
+        margin-top: -12px
+        margin-left: 14px
+        font-family: $prata
+        font-size: 24px
+        font-weight: 400
+        line-height: 1.25
+        background-color: $white
+        .sidebar__table & 
+            margin-left: 10px
+            +md 
+                margin: 0 0 8px
+        +md 
+            margin-top: 0
+    &__toggler
+        display: none
+        background: none
+        vertical-align: middle
+        .icon-plus
+            font-size: 24px
+            fill: $lightBrown
+        +md 
+            display: block
+
+.sidebar-list
+    font-family: $montserrat
+    padding: 10px 10px 15px 24px
+    +md 
+        display: none
+    &__item
+        margin-bottom: 17px
+        &.is-open
+            & > a
+                color: $black 
+        a
+            font-size: 13px
+            color: #5e6e6e 
+            font-weight: 500
+            text-transform: uppercase
+            line-height: 1.4
+            transition: color 0.4s
+            +hover
+                color: $lightBrown
+    &__secondary-list
+        position: relative
+        padding-left: 16px
+        display: none
+        margin-top: 16px
+        margin-bottom: 30px
+        .is-open &
+            display: block
+        &:before
+            position: absolute
+            content: ''
+            top: -7px
+            bottom: -16px
+            left: 0
+            width: 2px
+            background-color: $gallery
+        .sidebar-list__item.is-active
+            position: relative
+            &:before
+                position: absolute
+                content: ''
+                top: -7px
+                bottom: -7px
+                left: -16px
+                width: 2px
+                background-color: $lightBrown
+            &:last-child
+                &:before
+                    bottom: -16px
+        a
+            font-size: 14px
+            font-weight: 400
+            text-transform: none
+            transition: color 0.4s
+            +hover
+                color: $lightBrown

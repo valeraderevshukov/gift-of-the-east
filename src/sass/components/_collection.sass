@@ -1,0 +1,40 @@
+.collection
+	text-align: center
+	color: $gray 
+	letter-spacing: -0.01em 
+	background-color: $white 
+	+sm
+		margin-bottom: 20px
+	&:not(:last-child)
+		margin-bottom: 32px
+		&.collection_first
+			margin-bottom: 57px
+			+md
+				margin-bottom: 32px
+			+sm
+				margin-bottom: 24px
+		+sm
+			margin-bottom: 24px
+	&:last-child
+		.col:last-child &
+			+sm
+				margin-bottom: 0
+	&__img
+		img
+			width: 100%
+			display: block
+	&__wrap
+		padding: 26px 16px 16px
+		+sm
+			padding: 16px 0
+	&__text
+		max-width: 610px
+		margin: 0 auto
+	&__footer
+		margin-top: 28px
+		text-align: right
+		+sm
+			text-align: center
+			margin-top: 15px
+		.collection_sm &
+			margin-top: 40px

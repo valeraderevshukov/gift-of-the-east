@@ -1,0 +1,294 @@
+.btn
+	position: relative
+	padding: 15px 16px 14px 20px
+	font-family: $montserrat
+	+f(14px, 400, 1.42857)
+	letter-spacing: -0.01em 
+	color: $white
+	text-align: center
+	text-transform: uppercase 
+	vertical-align: top
+	transition: background-color .3s, padding-right .3s, color .3s
+	background-color: $lightBrown 
+	display: inline-block
+	+md
+		padding: 13px 12px 13px 12px
+	+hover
+		background-color: $hoverBrown 
+	.icon
+		position: relative
+		vertical-align: top
+		display: inline-block
+	.icon-shopping-bag
+		margin: -3px 13px
+		font-size: 21px
+		+md
+			margin: -1px 5px -1px 0
+			font-size: 16px
+	.icon-arrow-right
+		font-size: 12px
+	&_full
+		width: 100%
+		&:disabled
+			color: $black 
+			cursor: default
+			background-color: #EFEFEF 
+			+hover
+				background-color: #EFEFEF 
+	&_md
+		padding: 12px 20px 12px
+		line-height: 1.3
+		+md
+			padding: 10px 20px
+		+sm
+			padding:  7px 20px
+	&_sm
+		padding: 8px 25px
+		+f(16px, 400, 1.42857)
+		text-transform: none
+		+md
+			padding: 6px 23px
+	&_xs
+		font-size: 12px
+		font-weight: 500 
+		padding: 6px 10px
+		text-transform: none
+	&_w-md
+		min-width: 251px
+	&_rad
+		border-radius: 3px 
+	&_bord,
+		color: $black
+		overflow: hidden
+		background-color: transparent
+		border: 1px solid $lightBrown 
+		&:before
+			position: absolute
+			content: "" 
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0
+			transition: opacity .2s
+			animation: lineOut 0.3s ease alternate forwards
+			background-color: $lightBrown
+			.is-loaded &
+				opacity: 1
+				transition-delay: .2s
+		+hover
+			color: $white 
+			background-color: transparent 
+			.icon-heart-outline
+				color: $white
+			&:before
+				animation: lineOn 0.3s ease alternate forwards
+	&_bord-gray
+		border-color: $gray 
+		&:before
+			background-color: $gray 
+	&_bord-silver
+		border-color: $silver
+		&:before
+			background-color: $silver
+	&_anim
+		padding-right: 40px
+		+md
+			padding-right: 40px
+		+sm
+			padding-right: 40px
+		.icon
+			transition: color .3s
+		+hover
+			.icon-arrow-right
+				color: $white 
+				animation: arrowRight 0.5s ease alternate forwards
+				animation-delay: .31s
+	&_blue
+		color: $white 
+		background-color: $pictonBlue 
+		+hover
+			background-color: lighten($pictonBlue, 15%) 
+	&_line
+		position: relative
+		color: $black 
+		border-top: 1px solid $silver
+		border-bottom: 1px solid $silver
+		background-color: transparent 
+		overflow: hidden
+		+hover
+			background-color: transparent 
+			&:before,
+			&:after
+				transform: translateY(0)
+		&.is-open
+			background-color: transparent 
+			&:before,
+			&:after
+				transform: translateY(0)
+		&:before,
+		&:after
+			position: absolute
+			content: "" 
+			top: 0
+			height: 100%
+			width: 1px
+			transition: transform .3s
+			background-color: $silver 
+		&:before
+			left: 0
+			transform: translateY(-100%)
+		&:after
+			right: 0
+			transform: translateY(100%)
+	&_shopping
+		text-transform: none
+		font-size: 16px
+		line-height: 1.2
+		min-width: 160px
+	&_underline
+		color: $gray
+		font-size: 14px
+		line-height: 1.42857
+		text-transform: none
+		padding: 0
+		border: none
+		border-bottom: 1px solid $gray
+		background-color: transparent
+		+md 
+			padding: 0
+	&__text
+		position: relative
+		z-index: 1
+	&__icon
+		position: absolute
+		top: 50%
+		right: 22px
+		margin-top: -6px 
+		width: 12px
+		height: 12px
+		overflow: hidden
+		.icon-arrow-right
+			position: relative
+			color: $silver
+	.icon-heart-outline
+		font-size: 18px
+		color: $silver
+		margin-right: 6px
+
+@keyframes arrowRight
+	0%
+		transform: translateX(-105%)
+		opacity: 0
+	2%
+		transform: translateX(0)
+		opacity: 1
+	50%
+		transform: translateX(105%)
+		opacity: 1
+	51%
+		transform: translateX(105%)
+		opacity: 0
+	52%
+		transform: translateX(-105%)
+		opacity: 0
+	100%
+		transform: translateX(0)
+		opacity: 1
+
+@keyframes lineOn
+	0%
+		transform: translateX(-105%)
+	1%
+		transform: translateX(-105%)
+	100%
+		transform: translateX(0)
+@keyframes lineOut
+	0%
+		transform: translateX(5px)
+	100%
+		transform: translateX(105%)
+
+.btn-like
+	position: relative
+	height: 48px
+	width: 48px
+	min-width: 48px
+	line-height: 46px
+	font-size: 0 
+	color: $black 
+	text-align: center
+	border: 1px solid $silver
+	background-color: $white 
+	transition: color .3s
+	vertical-align: top
+	cursor: pointer
+	display: inline-block
+	+md
+		height: 45px
+		width: 45px
+		line-height: 44px
+	+hover
+		.like
+			color: $red 
+	.like
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -10px 0 0 -11px
+
+.btn-reset
+	position: relative
+	padding: 10px 16px 8px
+	font-family: $montserrat
+	font-size: 0
+	line-height: 20px
+	background-color: transparent
+	+sm
+		padding: 10px 8px 8px
+	span 
+		+f(14px, 400, 1.42857)
+		vertical-align: middle
+		+sm
+			font-size: 12px
+	.icon
+		vertical-align: middle
+		fill: $silver
+		font-size: 20px
+		margin-right: 8px
+
+.vertical-line-animation
+	position: relative
+	overflow: hidden
+	&:after,
+	&:before
+		position: absolute
+		content: ''
+		height: 100%
+		background-color: $silver
+		width: 1px
+	&:after
+		right: 0
+		top: 0
+		transform: translateY(101%)
+		transition: transform 0.4s
+	&:before
+		left: 0
+		bottom: 0
+		transform: translateY(-101%)
+		transition: transform 0.4s 
+	+hover
+		&:after
+			+gpu
+		&:before
+			+gpu
+.btn-text
+	font-family: $montserrat
+	color: $gray 
+	font-size: 14px
+	vertical-align: top
+	transition: color .3s
+	background-color: transparent 
+	display: inline-block
+	+hover
+		color: $silver

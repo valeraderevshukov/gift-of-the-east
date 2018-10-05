@@ -1,0 +1,198 @@
+.reviews
+	&__title
+		line-height: 1.36
+	&_article
+		border-top: 1px solid rgba($silver,.5)
+		padding-top: 27px
+		margin-top: 120px
+		+md
+			margin-top: 60px
+		+sm
+			margin-top: 30px
+			padding-top: 16px
+	&__input
+		max-width: 800px
+		input
+			border: 1px solid $silver
+			width: 100%
+			font-size: 14px
+			font-family: $montserrat
+			padding: 15px 15px 13px
+			color: $gray
+			+placeholder
+				color: $gray
+				font-size: 14px
+			&:focus
+				+placeholder
+					font-size: 0
+	
+.reviews-statistic
+	&__ratings,
+	&__estimate
+		vertical-align: top
+		display: inline-block
+		+sm
+			display: block
+	&__ratings
+		margin-right: 77px
+		+sm
+			margin-right: 0
+			margin-bottom: 30px
+
+.reviews-filter
+	&:not(:first-child)
+		margin-top: 24px
+	&__head
+		padding-bottom: 16px
+		border-bottom: 1px solid $gallery 
+	&__left
+		margin-top: 12px
+		float: left
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		+md
+			margin-top: 9px
+		+sm
+			float: none
+			margin-top: 0
+			margin-bottom: 16px
+		+xs
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+	&__toggler,
+	&__drop
+		vertical-align: top
+		display: inline-block
+	&__toggler
+		margin-right: 8px
+		+xs
+			margin-right: 0
+			margin-bottom: 16px
+	&__drop
+	&__select-text,
+	&__select
+		vertical-align: middle
+		display: inline-block
+	&__select-text
+		margin-right: 16px
+		line-height: 1.2
+	&__right
+		float: right
+		+sm
+			float: none
+
+.review
+	padding-top: 21px
+	font-size: 16px
+	line-height: 1.5
+	max-width: 800px
+	&_account
+		padding-top: 0
+	&:not(:first-child)
+		margin-top: 56px
+		+sm
+			margin-top: 16px
+	.review
+		margin: 40px 0 0 73px
+		+sm
+			margin: 16px 0 0 36px
+	&__head
+		margin-bottom: 15px
+		line-height: 1.28
+		.review_account & 
+			margin-bottom: 11px
+	&__rating,
+	&__name,
+	&__date,
+	&__reply,
+	&__logo
+		vertical-align: top
+		display: inline-block
+	&__name
+		font-size: 14px
+		&:not(:first-child)
+			margin-left: 14px
+	&__date
+		color: $gray 
+		font-size: 14px
+		&:not(:first-child)
+			margin-left: 8px
+	&__reply
+		color: $gray 
+		font-size: 14px
+		background-color: transparent 
+		+hover
+			.icon
+				color: $gray 
+		&:not(:first-child)
+			margin-left: 8px
+		.icon
+			margin: 2px 5px 0 0
+			color: $silver 
+			font-size: 15px
+			transition: color .3s
+			vertical-align: top
+			display: inline-block
+	&__title
+		margin-bottom: 13px
+		font-size: 16px
+		font-weight: 500 
+	&__footer
+		margin-top: 17px
+		justify-content: space-between
+		display: flex
+		.review_account &
+			// margin-top: 0
+			justify-content: flex-start
+	&__attached
+		padding-top: 13px
+		font-size: 0
+		overflow: hidden
+	&__attached-wrap
+		margin: 0 -16px -16px 0
+	&__img
+		margin: 16px 16px 16px 0
+		max-width: 120px
+		max-height: 120px
+		vertical-align: top
+		display: inline-block
+		img
+			max-width: 100%
+			max-height: 100%
+			display: block
+	&__details
+		margin-right: 28px
+		font-size: 14px
+		font-weight: 400
+		color: $gray
+		min-width: 110px
+	&__link
+		font-size: 14px
+		color: $blueLink
+		+text-overflow
+
+
+.likes
+	font-size: 0
+	color: $silver 
+	&.is-positive
+		color: $green
+	&.is-negative
+	 color: $red 
+	&__btn,
+	&__size
+		vertical-align: middle
+		display: inline-block
+	&__btn
+		color: $silver 
+		transition: color .3s
+		background-color: transparent 
+		+hover
+			color: $gray 
+		.icon
+			font-size: 16px
+	&__size
+		margin: 0 14px
+		font-size: 16px

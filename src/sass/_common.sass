@@ -1,0 +1,15 @@
+body
+	font-family: $montserrat
+	+f(14px, 400, 1.42857)
+	min-width: 320px
+	color: $black 
+	+font-smoothing
+	background-color: $white
+	&[data-lazy]
+		opacity: 0
+		transition: opacity .35s ease-in-out
+		&.is-loaded
+			opacity: 1
+
+.loader
+	display: none

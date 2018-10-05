@@ -1,0 +1,274 @@
+.card-catalog
+	display: block
+	transition: box-shadow .3s
+	background-color: $gallery
+	&__img
+		height: 208px
+	&__wrap
+		padding: 17px 16px
+		height: 72px
+		overflow: hidden
+	&__title
+		text-transform: uppercase
+		font-size: 13px
+		font-weight: 400
+		color: $black
+		overflow: hidden
+		height: 37px
+	&:hover
+		box-shadow: 0 6px 12px rgba(0,0,0,.2)	
+
+.img-bg
+	width: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%	
+
+.card-collection
+	display: flex
+	align-items: center
+	+md
+		justify-content: center
+		flex-wrap: wrap
+	&__left-col
+		flex: 0 0 57.2%
+		+md
+			flex: 0 0 100%
+	&__right-col
+		flex: 0 0 43%
+		+md	
+			flex: 0 0 100%	
+			order: -1
+	&__img
+		padding-bottom: 84%
+	.head
+		background-color: $white
+		margin-left: -72px
+		margin-bottom: 0
+		padding: 84px 55px 60px
+		+md
+			margin-left: 0
+			text-align: center
+			padding-top: 0
+		+sm
+			padding: 0 32px 32px
+		.title
+			margin-bottom: 24px	
+		&__btn
+			position: relative
+			display: inline-block
+
+.card-article
+	display: block
+	transition: box-shadow .3s
+	+hover
+		box-shadow: 0 6px 12px rgba(#000, .16) 
+	&__img
+		position: relative
+		height: 368px
+		padding: 15px 32px 24px 24px
+		&:after
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			content: ''
+			background-color: rgba(0,0,0,.3)
+	&__title
+		position: absolute
+		left: 24px
+		right: 32px
+		bottom: 24px
+		margin-bottom: 0
+		font-size: 24px
+		color: $white
+		z-index: 1
+	&:hover
+		box-shadow: 0 4px 12px rgba(0,0,0,.16)
+	.tag
+		position: relative
+		z-index: 1
+		
+.card
+	padding: 16px 0
+	color: $black 
+	width: 100%
+	font-size: 16px
+	table-layout: fixed
+	display: table
+	+ms
+		display: block
+	&_simple
+		padding: 16px
+		background-color: $white 
+		&:not(:first-child)
+			margin-top: 16px
+	&_bord
+		border-bottom: 1px solid rgba($silver, .5) 
+	&__img-wrap
+		vertical-align: top
+		display: table-cell
+		width: 176px
+		.card_simple &
+			width: 144px
+			+ms
+				width: 100%
+		.card_shopping &
+			width: 144px
+		+ms
+			margin-bottom: 16px
+			width: 100%
+			display: block
+	&__img
+		position: relative
+		width: 100%
+		padding-bottom: 100%
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		background-color: #F7F7F7
+		+ms
+			margin: 0 auto
+			width: 100%
+			padding-bottom: 70%
+	&__club-card
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -36px 0 0 -56px
+		width: 112px
+		height: 72px
+		border-radius: 5px
+		box-shadow: 0 3px 20px rgba(#000, .16) 
+		background-color: $white 
+		+vertical
+		+ms
+			margin: -15% 0 0 -35%
+			width: 70%
+			height: 40%
+	&__club-text
+		font-size: 13px
+		color: rgba($silver,.5) 
+		vertical-align: middle
+		display: inline-block
+	&__wrap
+		position: relative
+		height: 100%
+		padding-left: 32px
+		padding-bottom: 32px 
+		vertical-align: top
+		display: table-cell
+		+sm
+			padding-left: 16px
+			.card_shopping &
+				padding-bottom: 0
+		+ms
+			padding-left: 0
+			display: block
+		.card_simple &
+			padding-left: 16px
+			+ms
+				padding-left: 0
+	&__table
+		width: 100%
+		display: table
+		+sm
+			display: block
+	&__center
+		padding-right: 16px
+		vertical-align: top
+		display: table-cell
+		+sm
+			display: block
+	&__vendorcode
+		margin-bottom: 6px
+		.card_shopping &
+			margin-bottom: 0
+	&__title
+		max-width: 280px
+		font-size: 16px
+		line-height: 1.5
+		transition: color .3s
+		display: block
+		+hover
+			color: $lightBrown
+	&__quantity
+		margin-top: 12px
+		line-height: 1.5 
+		display: flex
+		align-items: center
+	&__quantity-text,
+	&__size
+		margin: 0 8px 0 0
+		vertical-align: top
+		display: inline-block
+	&__seclect
+		width: 101px
+		vertical-align: top
+		display: inline-block
+	&__right
+		min-width: 140px
+		text-align: right
+		vertical-align: top
+		display: table-cell
+		+sm
+			margin-top: 12px
+			text-align: left
+			display: block
+	&__price
+		.card_shopping &
+			line-height: 1
+		.is-old
+			position: relative
+			margin-left: 8px
+			padding: 0 2px
+			color: $gray 
+			vertical-align: top
+			display: inline-block
+			&:before
+				position: absolute
+				content: ""
+				top: 50%
+				left: 0
+				right: 0
+				margin-top: -1px
+				border-bottom: 1px solid  
+	&__benefit
+		font-size: 13px
+		color: $red 
+		&:not(:first-child)
+			margin-top: 5px
+	&__footer
+		position: absolute
+		bottom: 0
+		left: 32px
+		right: 0
+		+clr
+	&__close
+		float: right
+		margin: 2px 0 0 14px
+		color: $gray
+		font-size: 0
+		background-color: transparent
+		line-height: 1 
+		transition: color .3s
+		+hover
+			color: $lightBrown 
+		.icon
+			font-size: 16px
+	&__like
+		float: right
+		margin: 0 6px
+	&__subscribe
+		float: right
+		margin-top: 2px
+	&__availability
+		float: left
+		margin-top: 2px
+		font-size: 13px
+		color: $red 
+		
+.vendorcode
+	font-size: 13px
+	color: $gray

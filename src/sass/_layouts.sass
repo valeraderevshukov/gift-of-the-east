@@ -1,0 +1,146 @@
+.out
+	position: relative
+	overflow: hidden
+.section
+	position: relative
+	z-index: 1
+	padding: 80px 0
+	+sm
+		padding: 40px 0
+	&_gray
+		background-color: $gallery 
+	&__bg
+		position: absolute
+		top: 58%
+		left: 50%
+		overflow: hidden
+		transform: translate(-50%, -50%)
+		img
+			position: relative
+			display: block
+	&__background
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		opacity: 0.3
+		background-position: 50% 50%
+		background-size: cover
+		background-repeat: no-repeat
+.inner,
+.inner-sm,
+.inner-xs
+	position: relative
+	margin: 0 auto
+	padding: 0 15px
+	max-width: 1246px
+	+clr
+.inner
+	&_push-left
+		padding-left: 119px
+		+r(1266)
+			padding-left: 15px
+			max-width: 1038px
+
+.inner-sm
+	max-width: 1038px
+.inner-xs
+	max-width: 830px
+
+.row
+	margin: 0 -16px
+	display: flex
+	flex-wrap: wrap
+	&_psm
+		margin: 0 -12px
+.col
+	padding: 0 16px
+	&_psm
+		padding: 0 12px
+	&-20
+		flex: 0 0 20%
+		max-width: 20%
+	&-25
+		flex: 0 0 25%
+		max-width: 25%
+	&-30
+		flex: 0 0 30%
+		max-width: 30%
+	&-33
+		flex: 0 0 33.3%
+		max-width: 33.3%
+	&-35
+		flex: 0 0 35%
+		max-width: 35%
+	&-40
+		flex: 0 0 40%
+		max-width: 40%
+	&-42
+		flex: 0 0 41.7%
+		max-width: 41.7%
+	&-50
+		flex: 0 0 50%
+		max-width: 50%
+	&-58
+		flex: 0 0 58.3%
+		max-width: 58.3%
+	&-60
+		flex: 0 0 60%
+		max-width: 60%
+	&-65
+		flex: 0 0 65%
+		max-width: 65%
+	&-66
+		flex: 0 0 66.7%
+		max-width: 66.7% 
+	&-70
+		flex: 0 0 70%
+		max-width: 70%
+	&-75
+		flex: 0 0 75%
+		max-width: 75%
+	&-100
+		flex: 0 0 100%
+		max-width: 100%
+
+	
+	&-md-33
+		+md
+			flex: 0 0 33.3%
+			max-width: 33.3%
+	&-md-66
+		+md
+			flex: 0 0 66.6%
+			max-width: 66.6%
+	&-md-50
+		+md
+			flex: 0 0 50%
+			max-width: 50%
+	&-md-100
+		+md
+			flex: 0 0 100%
+			max-width: 100%
+	
+	&-sm-50
+		+sm
+			flex: 0 0 50%
+			max-width: 50%
+	&-sm-100
+		+sm
+			flex: 0 0 100%
+			max-width: 100%
+	
+
+	&-xs-100
+		+xs
+			flex: 0 0 100%
+			max-width: 100%
+	&-ms-100
+		+ms 
+			flex: 0 0 100%
+			max-width: 100%
+		
+.md-hide
+	+md 
+		display: none

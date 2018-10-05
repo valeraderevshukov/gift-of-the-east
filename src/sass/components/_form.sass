@@ -1,0 +1,257 @@
+.form
+	&__text
+		margin: 20px -27px 0
+		font-size: 14px
+		&_gray
+			color: $gray 
+.form-control
+	position: relative
+	&:not(:first-child)
+		margin-top: 24px
+	&_sm
+		&:not(:first-child)
+			margin-top: 16px
+	&.is-checked
+		.icon-check
+			visibility: visible
+			opacity: 1
+	.icon-check
+		position: absolute
+		top: 50%
+		right: 8px
+		margin-top: -5px
+		font-size: 10px
+		color: $green 
+		visibility: hidden
+		opacity: 0
+.form-label
+	+f(16px,400,1.5)
+	display: block
+.form-group
+	&:not(:last-child)
+		margin-bottom: 26px
+.form-tooltip
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 100%
+	z-index: 2
+	width: 320px
+	padding: 16px
+	font-size: 13px
+	color: $black 
+	margin-left: 24px
+	box-shadow: 0 6px 12px rgba(#000, .16) 
+	background-color: $white 
+	align-items: center
+	display: none
+	.tooltip-active &
+		display: flex
+		+md
+			display: none
+	&:before
+		position: absolute
+		content: "" 
+		z-index: -1
+		top: 50%
+		left: -6px
+		margin-top: -6px
+		width: 13px
+		height: 13px
+		box-shadow: 0 6px 12px rgba(#000, .16) 
+		+rotate(45)
+		background-color: $white 
+	&:after
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		bottom: 0
+		width: 7px
+		background-color: $white 
+	&__icon
+		margin-right: 12px
+		height: 100%
+		font-size: 0
+		vertical-align: middle
+		display: inline-block
+		.icon
+			font-size: 20px
+			color: $lightBrown 
+.form-question
+	margin-right: -16px
+	text-align: right
+	+sm
+		margin-right: 0
+	&:not(:first-child)
+		margin-top: 20px
+.form-radio-label
+	padding-left: 8px
+.form-radio-label
+	+f(14px,400,1.28)
+	color: $gray
+	vertical-align: top
+	display: inline-block
+	&:not(:last-child)
+		margin-right: 16px
+.radio
+	position: relative
+	cursor: pointer
+	user-select: none
+	vertical-align: top
+	display: inline-block
+	&:not(:last-child)
+		margin-right: 16px
+	input
+		position: absolute
+		opacity: 0
+		&:checked ~ .radio__text
+			&:before
+				border-color: $lightBrown 
+			&:after
+				opacity: 1
+	&__text
+		padding-left: 18px 
+		+f(14px,400,1.28)
+		display: block
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0
+			width: 16px
+			height: 16px
+			border-radius: 50% 
+			transition: border-color .3s
+			border: 1px solid $silver 
+		&:after
+			position: absolute
+			content: ""
+			top: 4px
+			left: 4px
+			width: 8px
+			height: 8px
+			opacity: 0
+			transition: opacity .3s
+			border-radius: 50% 
+			background-color: $lightBrown 
+.input
+	padding: 12px
+	height: 40px
+	width: 100%
+	color: $black 
+	font-family: $montserrat
+	+f(14px, 400, 1.285)
+	border: 1px solid $silver 
+	transition: border-color .3s
+	display: block
+	&::placeholder
+		color: #A29F9F 
+	&:focus
+		&::placeholder
+			font-size: 0
+	&_range
+		padding-left: 34px
+		&:focus
+			border: 1px solid $lightBrown
+	&.error
+		border-color: $red !important
+	&_password
+		padding-right: 38px
+.password-show
+	position: absolute
+	top: 50%
+	right: 12px
+	margin-top: -11px
+	font-size: 0
+	color: #C0C0C0
+	transition: color .3s
+	background-color: transparent 
+	+hover
+		color: $black
+	.icon
+		font-size: 22px
+		line-height: 1
+		&-eye-closed
+			.form-control.is-show &
+				display: none
+		&-eye-opened
+			display: none
+			.form-control.is-show &
+				display: block
+.form-social
+	text-align: center
+	&:not(:first-child)
+		margin-top: 34px
+.form-footer
+	&:not(:first-child)
+		margin-top: 22px
+	&_lg
+		&:not(:first-child)
+			margin-top: 30px
+
+.form-checkbox
+	margin-right: -60px
+	text-align: right
+	+sm
+		margin-right: 0
+	&:not(:first-child)
+		margin-top: 20px
+.checkbox
+	position: relative
+	padding-left: 28px
+	text-align: left
+	+f(13px,400,1.38)
+	color: $gray 
+	cursor: pointer
+	user-select: none
+	display: block
+	input
+		position: absolute
+		left: 0
+		top: -1px
+		opacity: 0
+		width: 16px
+		height: 16px
+		&:checked ~ .checkbox__icon
+			opacity: 1
+	&__text
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0
+			width: 16px
+			height: 16px
+			border: 1px solid $silver 
+		.link 
+			color: $black 
+	&__icon
+		position: absolute
+		top: 4px
+		left: 3px
+		font-size: 0
+		opacity: 0
+		transition: opacity .3s
+		.icon
+			font-size: 8px 
+			color: $lightBrown 
+
+.reg-number
+	margin: 20px -22px 0
+	font-size: 0
+	&__text
+		+f(17px,400,1.3)
+		color: #CFC7C7 
+		vertical-align: top
+		display: inline-block
+	&__input
+		padding: 0
+		height: 24px
+		width: 24px
+		font-size: 20px
+		text-align: center
+		vertical-align: top
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 8px

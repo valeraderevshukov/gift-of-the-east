@@ -1,0 +1,1729 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>product-card-description</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body data-lazy>
+    <!-- BEGIN content -->
+    <div class="out">
+      <div class="loader js-loader">
+        <div class="loader__text-wrapper">
+          <div class="loader__text">LOADER</div>
+        </div>
+      </div>
+      <!-- begin header -->
+      <header class="header">
+        <div class="header__top">
+          <div class="header__inner inner">
+            <div class="header__contact">
+              <a href="#" class="header__shops">
+                <svg class="icon icon-location">
+                  <use xlink:href="img/sprite.svg#icon-location"></use>
+                </svg>
+                <span>Магазины</span></a>
+              <a href="tel:+74565678795" class="header__phone">+7 (456) 567 87 95</a>
+            </div>
+            <div class="header__logo">
+              <!-- begin logo -->
+              <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="logo">
+              </a>
+              <!-- end logo -->
+            </div>
+            <div class="header__cabin">
+              <!-- begin signin -->
+              <div class="signin">
+                <a href="#" class="signin__item" data-modal-control="login">
+                  <svg class="icon icon-account">
+                    <use xlink:href="img/sprite.svg#icon-account"></use>
+                  </svg>
+                  <span>Войти</span></a>
+                <span class="signin__slash">/</span>
+                <a href="#" class="signin__item" data-modal-control="registration"><span>Регистрация</span></a>
+                <div class="signin__drop">
+                  <div class="signin__head">Добро пожаловать, Анна</div>
+                  <ul class="signin__list">
+                    <li>
+                      <a href="#">Личные данные</a>
+                    </li>
+                    <li class="has-inf">
+                      <a href="#">Сообщения <span class="text-silver">3</span></a>
+                    </li>
+                    <li>
+                      <a href="#">История покупок</a>
+                    </li>
+                    <li class="has-inf">
+                      <a href="#">Персональные предложения <span class="text-silver">4</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Избранное</a>
+                    </li>
+                    <li>
+                      <a href="#">Клубная карта</a>
+                    </li>
+                    <li>
+                      <a href="#">Пригласить друзей</a>
+                    </li>
+                  </ul>
+                  <div class="signin__footer">
+                    <a href="#" class="signin__exit">Выйти</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end signin -->
+              <!-- begin basket -->
+              <div class="basket">
+                <a href="#" class="basket__trigger">
+                  <svg class="icon icon-shopping-bag">
+                    <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                  </svg>
+                  <span>Корзина</span></a>
+                <div class="basket__drop">
+                  <div class="basket__head">Корзина (1)</div>
+                  <div class="basket__product js-basket-product">
+                    <div class="basket__product-inner">
+                      <div class="basket__img" style="background-image: url(./img/vase.jpg);"></div>
+                      <div class="basket__text">
+                        <a href="#" class="basket__name">Ваза из стекла с разноцветным узором</a>
+                        <div class="basket__quantity">Кол–во: 2</div>
+                      </div>
+                      <div class="basket__right">
+                        <div class="basket__price"><span>2000 ₽</span><span class="is-old">2800 ₽</span></div>
+                        <div class="basket__benefit">Ваша выгода 800 ₽</div>
+                      </div>
+                    </div>
+                    <button class="basket__remove" type="button">
+                      <svg class="icon icon-close">
+                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="basket__footer">
+                    <div class="basket__total"><strong>Итого:</strong> 2000 ₽</div>
+                    <div class="basket__button">
+                      <a href="#" class="btn btn_md btn_bord btn_anim">
+                        <span class="btn__text">Перейти в корзину</span>
+                        <span class="btn__icon">
+                          <svg class="icon icon-arrow-right">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end basket -->
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__inner inner">
+            <!-- begin search -->
+            <div class="header__search search">
+              <form action="/" class="search__form">
+                <button class="search__btn" type="button">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+                <input type="text" class="search__input" placeholder="Поиск">
+              </form>
+            </div>
+            <!-- end search -->
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item js-nav-item">
+                  <a href="#" class="nav__link">
+                    <span class="nav__text">КАТАЛОГ</span>
+                    <span class="nav__line"><span></span></span>
+                  </a>
+                  <span class="nav__wrap js-nav-wrap">
+                    <span class="nav__inner inner">
+                      <ul class="nav__items">
+                        <li><a href="#">Изделия из натуральных камней</a></li>
+                        <li><a href="#">Муранское стекло</a></li>
+                        <li><a href="#">Предметы интерьера</a></li>
+                        <li><a href="#">Питьевая посуда, фляжки, <br>бочки для вина</a></li>
+                        <li><a href="#">Подсвечники</a></li>
+                        <li><a href="#">Посуда и сервировка</a></li>
+                        <li><a href="#">Статуэтки, куклы</a></li>
+                        <li><a href="#">Принадлежности для письма</a></li>
+                        <li><a href="#">Кальяны, курительные принадлежности</a></li>
+                        <li><a href="#">Настольные игры</a></li>
+                        <li><a href="#">Сувенирное оружие</a></li>
+                        <li><a href="#">Фэн-шуй</a></li>
+                        <li><a href="#">Религиозные подарки</a></li>
+                        <li><a href="#">Сувенирные изделия, копилки, антистрессы</a></li>
+                        <li><a href="#">Символы г. Омска</a></li>
+                        <li><a href="#">Вазы</a></li>
+                        <li><a href="#">Музыкальные ретро центры, <br>ретро телефоны</a></li>
+                        <li><a href="#">Картины, декоративные тарелки</a></li>
+                        <li><a href="#">Фоторамки</a></li>
+                        <li><a href="#">Светильники</a></li>
+                        <li><a href="#">Подсвечники</a></li>
+                        <li><a href="#">Фонтаны</a></li>
+                        <li><a href="#">Часы</a></li>
+                        <li><a href="#">Шкатулки, книги-сейфы, <br>ключницы</a></li>
+                        <li><a href="#">Мебель, глобус-бары</a></li>
+                        <li><a href="#">Барометры</a></li>
+                        <li><a href="#">Корабли</a></li>
+                      </ul>
+                      <span class="nav__img">
+                        <img src="./img/nav-img@2x.jpg" alt="img">
+                      </span>
+                    </span>
+                  </span>
+                </li>
+                <li class="nav__item js-nav-item">
+                  <a href="#" class="nav__link">
+                    <span class="nav__text">КОЛЛЕКЦИИ</span>
+                    <span class="nav__line"><span></span></span>
+                  </a>
+                </li>
+                <li class="nav__item js-nav-item">
+                  <a href="#" class="nav__link">
+                    <span class="nav__text">АКЦИИ</span>
+                    <span class="nav__line"><span></span></span>
+                  </a>
+                </li>
+                <li class="nav__item js-nav-item">
+                  <a href="#" class="nav__link">
+                    <span class="nav__text">ЖУРНАЛ</span>
+                    <span class="nav__line"><span></span></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- begin goods -->
+      <div class="goods">
+        <div class="goods__card">
+          <div class="goods__inner inner">
+            <!-- begin breadcrumbs -->
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="#"><svg class="icon icon-chevron-left">
+                    <use xlink:href="img/sprite.svg#icon-chevron-left"></use>
+                  </svg>Назад</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Предметы интерьера</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Вазы</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Вазы настольные</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span>Ваза из стекла с разноцветным узором</span>
+              </li>
+            </ul>
+            <!-- end breadcrumbs -->
+            <div class="goods__row row">
+              <div class="goods__col col col-58 col-md-100">
+                <!-- begin slider-products -->
+                <div class="slider-products js-slider-wrap">
+                  <div class="slider-products__show js-slider-products">
+                    <div class="slider-products__slide" style="background-image: url(./img/vase.jpg);">
+                      <div class="price-below price-below_action js-drop js-price-below">
+                        <div class="action-block js-open-drop">%</div>
+                        <div class="price-below__drop js-drop-hidden">
+                          <div class="price-below__info">
+                            <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                            <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                          </div>
+                          <div class="price-below__fotter">
+                            <!-- Start price -->
+                            <div class="price price_red">
+                              <span class="price__number"> 1000 ₽ </span>
+                              <span class="price__text">Розничная цена</span>
+                            </div>
+                            <!-- End price -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-products__slide" style="background-image: url(./img/vase.jpg);"></div>
+                    <div class="slider-products__slide" style="background-image: url(./img/vase.jpg);">
+                      <div class="price-below price-below_action js-drop js-price-below">
+                        <div class="action-block js-open-drop">%</div>
+                        <div class="price-below__drop js-drop-hidden">
+                          <div class="price-below__info">
+                            <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                            <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                          </div>
+                          <div class="price-below__fotter">
+                            <!-- Start price -->
+                            <div class="price price_red">
+                              <span class="price__number"> 1000 ₽ </span>
+                              <span class="price__text">Розничная цена</span>
+                            </div>
+                            <!-- End price -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-products__nav js-slider-products-nav">
+                    <div class="slider-products__slide-wrap">
+                      <div class="slider-products__slide-nav" style="background-image: url(./img/vase.jpg);"></div>
+                    </div>
+                    <div class="slider-products__slide-wrap">
+                      <div class="slider-products__slide-nav" style="background-image: url(./img/vase.jpg);"></div>
+                    </div>
+                    <div class="slider-products__slide-wrap">
+                      <div class="slider-products__slide-nav" style="background-image: url(./img/vase.jpg);"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end slider-products -->
+              </div>
+              <div class="goods__col col col-42 col-md-100">
+                <h3 class="goods__title title-md">Ваза из стекла с разноцветным узором</h3>
+                <!-- Start rating -->
+                <div class="rating-stars">
+                  <div class="rating-stars__input">
+                    <input type="hidden" id="stars" class="rating-stars__input rating js-rating" value="4.5" data-fractions="10" />
+                  </div>
+                  <div class="rating-stars__wrap">
+                    <a href="#" class="rating-stars__text">2 отзыва</a>
+                    <span class="rating-stars__text">12 просмотров</span>
+                    <span class="rating-stars__text">Артикул: 45675</span>
+                  </div>
+                </div>
+                <!-- End rating -->
+                <div class="goods__price">
+                  <!-- Start price -->
+                  <div class="price">
+                    <span class="price__number"> 1000 ₽ </span>
+                    <span class="price__text">Розничная цена</span>
+                  </div>
+                  <!-- End price -->
+                </div>
+                <div class="goods__controls">
+                  <div class="goods__field">
+                    <div class="price-below js-drop js-price-below" data-drop-position="bottom">
+                      <div class="price-below__btn js-open-drop" data-text-open="СДЕЛАТЬ ЦЕНУ НИЖЕ" data-text-close="ЗАКРЫТЬ">
+                        <a href="#" class="btn btn_full btn_line">
+                          <span class="btn__text js-drop-btn-text">СДЕЛАТЬ ЦЕНУ НИЖЕ</span>
+                        </a>
+                      </div>
+                      <div class="price-below__drop js-drop-hidden">
+                        <div class="price-below__info">
+                          <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                          <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                        </div>
+                        <div class="price-below__fotter">
+                          <!-- Start price -->
+                          <div class="price price_red">
+                            <span class="price__number"> 1000 ₽ </span>
+                            <span class="price__text">Розничная цена</span>
+                          </div>
+                          <!-- End price -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="goods__field">
+                    <div class="goods__buy">
+                      <button class="btn btn_full" type="button">ДОБАВИТЬ В КОРЗИНУ</button>
+                      <!-- begin likebtn -->
+                      <label class="btn-like">
+                        <span class="like">
+                          <input type="checkbox">
+                          <svg class="icon icon-heart-outline">
+                            <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                          </svg>
+                          <svg class="icon icon-heart">
+                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                          </svg>
+                          <span class="like__lines"></span>
+                        </span>
+                      </label>
+                      <!-- end likebtn -->
+                    </div>
+                  </div>
+                </div>
+                <div class="goods__share">
+                  <div class="goods__field">
+                    <a href="#" class="iconlink">
+                      <span class="iconlink__icon">
+                        <svg class="icon icon-location">
+                          <use xlink:href="img/sprite.svg#icon-location"></use>
+                        </svg>
+                      </span>
+                      <span class="iconlink__text">В наличии в 3 магазинах</span>
+                    </a>
+                  </div>
+                  <div class="goods__field">
+                    <a href="#" class="iconlink">
+                      <span class="iconlink__icon">
+                        <svg class="icon icon-share-variant">
+                          <use xlink:href="img/sprite.svg#icon-share-variant"></use>
+                        </svg>
+                      </span>
+                      <span class="iconlink__text">Поделиться с друзьями</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods__tabs">
+          <!-- begin tabs -->
+          <div class="tabs" data-tabs>
+            <div class="tabs__out">
+              <div class="tabs__current" data-tabs-current><span></span></div>
+              <ul class="tabs__list inner inner_push-left">
+                <li class="tabs__item" data-tabs-control="description"> Описание </li>
+                <li class="tabs__item" data-tabs-control="availability"> Наличие в магазинах <span class="tabs__quantity">3</span>
+                </li>
+                <li class="tabs__item" data-tabs-control="reviews"> Отзывы <span class="tabs__quantity">2</span>
+                </li>
+                <li class="tabs__item" data-tabs-control="question-answer"> Вопрос-ответ <span class="tabs__quantity">2</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs__wrap" data-tabs-wrapper>
+              <div class="tabs__container" data-tabs-container="description">
+                <div class="tabs__inner inner-sm">
+                  <div class="tabs__row row">
+                    <div class="tabs__col col col-70 col-sm-100">
+                      <p>Эмоциональное описание. Сегодня этот текст используют практически все дизайнеры, набирающие рыбу латиницей. Абзац считается каноническим во всех справочниках по типографике и предлагается к использованию в статьях,
+                        посвященных изготовлению макета верстки при отсутствии финальных текстов. Эмоциональное описание. Сегодня этот текст используют практически все дизайнеры, набирающие рыбу латиницей. Абзац считается каноническим во всех
+                        справочниках по типографике и предлагается к использованию в</p>
+                    </div>
+                    <div class="tabs__col col col-30 col-sm-100">
+                      <div class="tabs__group">
+                        <h4 class="title-xs">РАЗМЕРЫ</h4>
+                        <p>Длина: 56 см</p>
+                        <p>Ширина: 48 см</p>
+                        <p>Высота: 61 см</p>
+                      </div>
+                      <div class="tabs__group">
+                        <h4 class="title-xs">МАТЕРИАЛЫ</h4>
+                        <p>Дерево, акриловый лак, позолота</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__container" data-tabs-container="availability">
+                <div class="tabs__inner inner-sm">
+                  <div class="shops-info">
+                    <h3 class="shops-info__title-simple title-simple">Доступно в 3 магазинах в городе Омск</h3>
+                    <p>Вы можете выбрать любой магазин для самовывоза товара. <a href="#" class="link">Подробнее</a></p>
+                    <div class="shops-info__head">
+                      <div class="shops-info__search">
+                        <!-- Start new-search -->
+                        <div class="new-search">
+                          <label class="new-search__label">
+                            <input class="new-search__input" type="text" name="new-search" placeholder="Город, адрес, название ТЦ">
+                            <button type="button" class="new-search__btn">
+                              <svg class="icon icon-search">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                              </svg>
+                            </button>
+                          </label>
+                        </div>
+                        <!-- End new-search -->
+                      </div>
+                      <div class="shops-info__view">
+                        <!-- Start radio-btn -->
+                        <div class="radio-btn">
+                          <label class="radio-btn__label js-radio-tab is-active">
+                            <input type="radio" name="radio-btn">
+                            <span class="radio-btn__icon">
+                              <svg class="icon icon-format-list-bulleted">
+                                <use xlink:href="img/sprite.svg#icon-format-list-bulleted"></use>
+                              </svg>
+                            </span>
+                            <span class="radio-btn__title">Список</span>
+                          </label>
+                          <label class="radio-btn__label js-radio-tab">
+                            <input type="radio" name="radio-btn">
+                            <span class="radio-btn__icon">
+                              <svg class="icon icon-map">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                              </svg>
+                            </span>
+                            <span class="radio-btn__title">Карта</span>
+                          </label>
+                        </div>
+                        <!-- End radio-btn -->
+                      </div>
+                    </div>
+                    <div class="shops-table">
+                      <div class="shops-table__head">
+                        <div class="shops-table__th">Адрес магазина</div>
+                        <div class="shops-table__th">Телефон</div>
+                        <div class="shops-table__th">Время работы</div>
+                        <div class="shops-table__th">Наличие</div>
+                      </div>
+                      <div class="shops-table__body">
+                        <div class="shops-table__row">
+                          <div class="shops-table__td" data-title="Адрес магазина">
+                            <div class="shops-table__text ">Континент 2</div>
+                            <div class="shops-table__addres">70 лет Октября, 25 к.2 </div>
+                          </div>
+                          <div class="shops-table__td" data-title="Телефон">
+                            <div class="shops-table__text ">+7 (678) 678 87 67</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Время работы">
+                            <div class="shops-table__day">пн–вс</div>
+                            <div class="shops-table__text ">10:00–21:00</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Наличие">
+                            <div class="shops-table__text ">3 шт</div>
+                          </div>
+                        </div>
+                        <div class="shops-table__row">
+                          <div class="shops-table__td" data-title="Адрес магазина">
+                            <div class="shops-table__text ">Мега</div>
+                            <div class="shops-table__addres">Бульвар Архитекторов, 35</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Телефон">
+                            <div class="shops-table__text ">+7 (678) 678 87 67</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Время работы">
+                            <div class="shops-table__day">пн–вс</div>
+                            <div class="shops-table__text ">10:00–21:00</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Наличие">
+                            <div class="shops-table__text ">2 шт</div>
+                          </div>
+                        </div>
+                        <div class="shops-table__row">
+                          <div class="shops-table__td" data-title="Адрес магазина">
+                            <div class="shops-table__text ">Фестиваль</div>
+                            <div class="shops-table__addres">ул.70 лет Октября, 19</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Телефон">
+                            <div class="shops-table__text ">+7 (678) 678 87 67</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Время работы">
+                            <div class="shops-table__day">пн–вс</div>
+                            <div class="shops-table__text ">10:00–21:00</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Наличие">
+                            <div class="shops-table__text ">1 шт</div>
+                          </div>
+                        </div>
+                        <div class="shops-table__row">
+                          <div class="shops-table__td" data-title="Адрес магазина">
+                            <div class="shops-table__text ">Маяк–3</div>
+                            <div class="shops-table__addres">пр.Комарова, 6 к.1</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Телефон">
+                            <div class="shops-table__text ">+7 (678) 678 87 67</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Время работы">
+                            <div class="shops-table__day">пн–вс</div>
+                            <div class="shops-table__text ">10:00–21:00</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Наличие">
+                            <div class="shops-table__text  shops-table__text_gray">Нет в наличии</div>
+                          </div>
+                        </div>
+                        <div class="shops-table__row">
+                          <div class="shops-table__td" data-title="Адрес магазина">
+                            <div class="shops-table__text ">Привокзальный</div>
+                            <div class="shops-table__addres">ул.Карла Маркса, 84</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Телефон">
+                            <div class="shops-table__text ">+7 (678) 678 87 67</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Время работы">
+                            <div class="shops-table__day">пн–вс</div>
+                            <div class="shops-table__text ">10:00–21:00</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Наличие">
+                            <div class="shops-table__text  shops-table__text_gray">Нет в наличии</div>
+                          </div>
+                        </div>
+                        <div class="shops-table__row">
+                          <div class="shops-table__td" data-title="Адрес магазина">
+                            <div class="shops-table__text ">Каскад</div>
+                            <div class="shops-table__addres">ул.Карла Маркса, 24</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Телефон">
+                            <div class="shops-table__text ">+7 (678) 678 87 67</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Время работы">
+                            <div class="shops-table__day">пн–вс</div>
+                            <div class="shops-table__text ">10:00–21:00</div>
+                          </div>
+                          <div class="shops-table__td" data-title="Наличие">
+                            <div class="shops-table__text  shops-table__text_gray">Нет в наличии</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__container" data-tabs-container="reviews">
+                <!-- begin reviews -->
+                <div class="reviews">
+                  <div class="reviews__inner inner-sm">
+                    <h3 class="reviews__title title-simple">2 отзыва</h3>
+                    <div class="reviews-statistic">
+                      <div class="reviews-statistic__ratings">
+                        <!-- begin rating-stat -->
+                        <div class="rating-statistic">
+                          <div class="rating-statistic__chekbox">
+                            <div class="rating-statistic__icon">
+                              <svg class="icon icon-check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="rating-statistic__stars">
+                            <!-- Start rating -->
+                            <div class="rating-stars rating-stars_gray">
+                              <div class="rating-stars__input">
+                                <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="5" data-fractions="10" />
+                              </div>
+                            </div>
+                            <!-- End rating -->
+                          </div>
+                          <div class="rating-statistic__progress progress">
+                            <div class="progress__inner" style="width: 50%"></div>
+                          </div>
+                          <div class="rating-statistic__quantity">1</div>
+                        </div>
+                        <!-- end rating-stat -->
+                        <!-- begin rating-stat -->
+                        <div class="rating-statistic">
+                          <div class="rating-statistic__chekbox">
+                            <div class="rating-statistic__icon">
+                              <svg class="icon icon-check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="rating-statistic__stars">
+                            <!-- Start rating -->
+                            <div class="rating-stars rating-stars_gray">
+                              <div class="rating-stars__input">
+                                <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="4" data-fractions="10" />
+                              </div>
+                            </div>
+                            <!-- End rating -->
+                          </div>
+                          <div class="rating-statistic__progress progress">
+                            <div class="progress__inner" style="width: 50%"></div>
+                          </div>
+                          <div class="rating-statistic__quantity">1</div>
+                        </div>
+                        <!-- end rating-stat -->
+                        <!-- begin rating-stat -->
+                        <div class="rating-statistic">
+                          <div class="rating-statistic__chekbox">
+                            <div class="rating-statistic__icon">
+                              <svg class="icon icon-check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="rating-statistic__stars">
+                            <!-- Start rating -->
+                            <div class="rating-stars rating-stars_gray">
+                              <div class="rating-stars__input">
+                                <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="3" data-fractions="10" />
+                              </div>
+                            </div>
+                            <!-- End rating -->
+                          </div>
+                          <div class="rating-statistic__progress progress">
+                            <div class="progress__inner" style="width: 0%"></div>
+                          </div>
+                        </div>
+                        <!-- end rating-stat -->
+                        <!-- begin rating-stat -->
+                        <div class="rating-statistic">
+                          <div class="rating-statistic__chekbox">
+                            <div class="rating-statistic__icon">
+                              <svg class="icon icon-check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="rating-statistic__stars">
+                            <!-- Start rating -->
+                            <div class="rating-stars rating-stars_gray">
+                              <div class="rating-stars__input">
+                                <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="2" data-fractions="10" />
+                              </div>
+                            </div>
+                            <!-- End rating -->
+                          </div>
+                          <div class="rating-statistic__progress progress">
+                            <div class="progress__inner" style="width: 0%"></div>
+                          </div>
+                        </div>
+                        <!-- end rating-stat -->
+                        <!-- begin rating-stat -->
+                        <div class="rating-statistic">
+                          <div class="rating-statistic__chekbox">
+                            <div class="rating-statistic__icon">
+                              <svg class="icon icon-check">
+                                <use xlink:href="img/sprite.svg#icon-check"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="rating-statistic__stars">
+                            <!-- Start rating -->
+                            <div class="rating-stars rating-stars_gray">
+                              <div class="rating-stars__input">
+                                <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="1" data-fractions="10" />
+                              </div>
+                            </div>
+                            <!-- End rating -->
+                          </div>
+                          <div class="rating-statistic__progress progress">
+                            <div class="progress__inner" style="width: 0%"></div>
+                          </div>
+                        </div>
+                        <!-- end rating-stat -->
+                      </div>
+                      <div class="reviews-statistic__estimate">
+                        <div class="average-rating">
+                          <div class="average-rating__wrap">
+                            <div class="average-rating__size">4.5</div>
+                            <div class="average-rating__stars">
+                              <!-- Start rating -->
+                              <div class="rating-stars rating-stars_md">
+                                <div class="rating-stars__input">
+                                  <input type="hidden" id="stars" class="rating-stars__input rating js-rating" value="4.5" data-fractions="10" />
+                                </div>
+                              </div>
+                              <!-- End rating -->
+                            </div>
+                          </div>
+                          <div class="average-rating__text">Средняя оценка на основании 2 отзывов</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-filter">
+                    <div class="reviews-filter__head">
+                      <div class="reviews-filter__inner inner inner_push-left">
+                        <div class="reviews-filter__left">
+                          <div class="reviews-filter__toggler">
+                            <!-- Start checkbox -->
+                            <label class="toggler">
+                              <input type="checkbox" name="checkbox" checked>
+                              <span class="toggler__text">С фото</span>
+                            </label>
+                            <!-- End checkbox -->
+                          </div>
+                          <div class="reviews-filter__drop">
+                            <div class="reviews-filter__select-text">Упорядочить</div>
+                            <div class="reviews-filter__select">
+                              <select class="select select_bord js-select" data-width="214px">
+                                <option value="Cначала новинки">сначала новые</option>
+                                <option value="text 1">text 1</option>
+                                <option value="text 2">text 2</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reviews-filter__right">
+                          <a href="#" class="btn btn_w-md btn_bord btn_bord-silver"><span class="btn__text">Показать</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__inner inner-sm">
+                    <div class="reviews__wrap">
+                      <!-- begin review -->
+                      <div class="review">
+                        <div class="review__wrap">
+                          <div class="review__head">
+                            <div class="review__rating">
+                              <!-- Start rating -->
+                              <div class="rating-stars rating-stars_gray">
+                                <div class="rating-stars__input">
+                                  <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="5" data-fractions="10" />
+                                </div>
+                              </div>
+                              <!-- End rating -->
+                            </div>
+                            <div class="review__name">Анна</div>
+                            <div class="review__date">21 мая в 12:45</div>
+                          </div>
+                          <div class="review__title">Шикарный</div>
+                          <p>Замечательный слон! Стал отличным подарком нашим друзья на свадьбу, они любители востока и им он идеально подошел к интерьеру 😍</p>
+                          <div class="review__footer">
+                            <button class="btn-text" type="button">Ответить</button>
+                            <div class="review__likes likes is-positive">
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-up-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-up-outline"></use>
+                                </svg>
+                              </button>
+                              <div class="likes__size">5</div>
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-down-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-down-outline"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="review__attached">
+                            <div class="review__attached-wrap">
+                              <div class="review__img"><img src="./img/review-img.jpg" alt="review-img"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- begin review -->
+                        <div class="review">
+                          <div class="review__wrap">
+                            <div class="review__head">
+                              <div class="review__rating">
+                                <!-- Start rating -->
+                                <div class="rating-stars rating-stars_gray">
+                                  <div class="rating-stars__input">
+                                    <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="4.5" data-fractions="10" />
+                                  </div>
+                                </div>
+                                <!-- End rating -->
+                              </div>
+                              <div class="review__name">Мария</div>
+                              <div class="review__date">21 мая в 13:05</div>
+                              <button class="review__reply" type="button">
+                                <svg class="icon icon-reply">
+                                  <use xlink:href="img/sprite.svg#icon-reply"></use>
+                                </svg> Анне</button>
+                            </div>
+                            <p>Cогласна! Мне слон тоже очень понравился, роскошный подарок.</p>
+                            <div class="review__footer">
+                              <button class="btn-text" type="button">Ответить</button>
+                              <div class="review__likes likes">
+                                <button class="likes__btn" type="button">
+                                  <svg class="icon icon-thumb-up-outline">
+                                    <use xlink:href="img/sprite.svg#icon-thumb-up-outline"></use>
+                                  </svg>
+                                </button>
+                                <div class="likes__size">0</div>
+                                <button class="likes__btn" type="button">
+                                  <svg class="icon icon-thumb-down-outline">
+                                    <use xlink:href="img/sprite.svg#icon-thumb-down-outline"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end review -->
+                      </div>
+                      <!-- end review -->
+                      <!-- begin review -->
+                      <div class="review">
+                        <div class="review__wrap">
+                          <div class="review__head">
+                            <div class="review__rating">
+                              <!-- Start rating -->
+                              <div class="rating-stars rating-stars_gray">
+                                <div class="rating-stars__input">
+                                  <input type="hidden" id="stars" class="rating-stars__input rating js-rating-full" value="4.5" data-fractions="10" />
+                                </div>
+                              </div>
+                              <!-- End rating -->
+                            </div>
+                            <div class="review__name">Лиза</div>
+                            <div class="review__date">25 мая в 9:48</div>
+                          </div>
+                          <div class="review__title">Необычный подарок</div>
+                          <p>Замечательный слон! Стал отличным подарком нашим друзья на свадьбу, они любители востока и им он идеально подошел к интерьеру 😍 Однако цена высоковата, за это минус балл(</p>
+                          <div class="review__footer">
+                            <button class="btn-text" type="button">Ответить</button>
+                            <div class="review__likes likes is-negative">
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-up-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-up-outline"></use>
+                                </svg>
+                              </button>
+                              <div class="likes__size">-1</div>
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-down-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-down-outline"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="review__attached">
+                            <div class="review__attached-wrap">
+                              <div class="review__img"><img src="./img/review-img.jpg" alt="review-img"></div>
+                              <div class="review__img"><img src="./img/review-img.jpg" alt="review-img"></div>
+                              <div class="review__img"><img src="./img/review-img.jpg" alt="review-img"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end review -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end reviews -->
+              </div>
+              <div class="tabs__container" data-tabs-container="question-answer">
+                <!-- begin reviews -->
+                <div class="reviews">
+                  <div class="reviews__inner inner-sm">
+                    <h3 class="reviews__title title-simple">2 вопроса</h3>
+                  </div>
+                  <div class="reviews-filter">
+                    <div class="reviews-filter__head">
+                      <div class="reviews-filter__inner inner inner_push-left">
+                        <div class="reviews-filter__left">
+                          <div class="reviews-filter__toggler">
+                            <!-- Start checkbox -->
+                            <label class="toggler">
+                              <input type="checkbox" name="checkbox" checked>
+                              <span class="toggler__text">С фото</span>
+                            </label>
+                            <!-- End checkbox -->
+                          </div>
+                          <div class="reviews-filter__drop">
+                            <div class="reviews-filter__select-text">Упорядочить</div>
+                            <div class="reviews-filter__select">
+                              <select class="select select_bord js-select" data-width="214px">
+                                <option value="Cначала новинки">сначала новые</option>
+                                <option value="text 1">text 1</option>
+                                <option value="text 2">text 2</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reviews-filter__right">
+                          <a href="#" class="btn btn_w-md btn_bord btn_bord-silver"><span class="btn__text">ЗАДАТЬ ВОПРОС</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__inner inner-sm">
+                    <div class="reviews__wrap">
+                      <!-- begin review -->
+                      <div class="review">
+                        <div class="review__wrap">
+                          <div class="review__head">
+                            <div class="review__name">Анна</div>
+                            <div class="review__date">21 мая в 12:45</div>
+                          </div>
+                          <p>Скажите, а есть ли у вас в магазине слон под мой интерьер (на фотографии)?</p>
+                          <div class="review__footer">
+                            <button class="btn-text" type="button">Ответить</button>
+                            <div class="review__likes likes is-positive">
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-up-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-up-outline"></use>
+                                </svg>
+                              </button>
+                              <div class="likes__size">5</div>
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-down-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-down-outline"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="review__attached">
+                            <div class="review__attached-wrap">
+                              <div class="review__img"><img src="./img/dining-room-1006525_1920@2x.jpg" alt="review-img"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- begin review -->
+                        <div class="review">
+                          <div class="review__wrap">
+                            <div class="review__head">
+                              <div class="review__logo"><img src="./img/logo-review.png" alt="img"></div>
+                              <div class="review__name">Дары Востока</div>
+                              <div class="review__date">21 мая в 13:05</div>
+                              <button class="review__reply" type="button">
+                                <svg class="icon icon-reply">
+                                  <use xlink:href="img/sprite.svg#icon-reply"></use>
+                                </svg> Анне</button>
+                            </div>
+                            <p>Здравствуйте, Анна! Да, мы можем вам посоветовать этот замечательный</p>
+                            <div class="review__footer">
+                              <button class="btn-text" type="button">Ответить</button>
+                              <div class="review__likes likes">
+                                <button class="likes__btn" type="button">
+                                  <svg class="icon icon-thumb-up-outline">
+                                    <use xlink:href="img/sprite.svg#icon-thumb-up-outline"></use>
+                                  </svg>
+                                </button>
+                                <div class="likes__size">0</div>
+                                <button class="likes__btn" type="button">
+                                  <svg class="icon icon-thumb-down-outline">
+                                    <use xlink:href="img/sprite.svg#icon-thumb-down-outline"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end review -->
+                      </div>
+                      <!-- end review -->
+                      <!-- begin review -->
+                      <div class="review">
+                        <div class="review__wrap">
+                          <div class="review__head">
+                            <div class="review__name">Лиза</div>
+                            <div class="review__date">25 мая в 9:48</div>
+                          </div>
+                          <p>Подскажите, пожалуйста, какой максимальный вес выдерживает данный стул-слон?</p>
+                          <div class="review__footer">
+                            <button class="btn-text" type="button">Ответить</button>
+                            <div class="review__likes likes is-negative">
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-up-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-up-outline"></use>
+                                </svg>
+                              </button>
+                              <div class="likes__size">-1</div>
+                              <button class="likes__btn" type="button">
+                                <svg class="icon icon-thumb-down-outline">
+                                  <use xlink:href="img/sprite.svg#icon-thumb-down-outline"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end review -->
+                    </div>
+                  </div>
+                </div>
+                <!-- end reviews -->
+              </div>
+            </div>
+          </div>
+          <!-- end tabs -->
+          <div class="goods__filter">
+            <div class="goods__inner inner-sm">
+              <div class="goods__tags tags">
+                <div class="tags__wrap">
+                  <a href="#" class="tag tag_gallery">ПОДАРКИ ДЛЯ ЖЕНЩИН</a>
+                  <a href="#" class="tag tag_gallery">НЕОБЫЧНЫЕ ПОДАРКИ</a>
+                  <a href="#" class="tag tag_gallery">ВОСТОЧНЫЙ ИНТЕРЬЕР</a>
+                  <a href="#" class="tag tag_gallery">ВОСТОЧНЫЙ ИНТЕРЬЕР</a>
+                  <a href="#" class="tag tag_gallery">ЭЛЕГАНТНОСТЬ</a>
+                </div>
+              </div>
+              <div class="goods__filter-select">
+                <select class="js-select select select_bord select_sm select_icon" data-icon-arrow="chevron-down" data-width="144">
+                  <option value="ПОКАЗАТЬ ВСЕ">ПОКАЗАТЬ ВСЕ</option>
+                  <option value="item">item</option>
+                  <option value="item">item</option>
+                  <option value="item">item</option>
+                  <option value="item">item</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods__section">
+          <div class="goods__inner inner">
+            <h2 class="title text-center">Больше товаров по акции</h2>
+            <div class="row row_psm">
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <div class="price-below price-below_action js-drop js-price-below">
+                      <div class="action-block js-open-drop">%</div>
+                      <div class="price-below__drop js-drop-hidden">
+                        <div class="price-below__info">
+                          <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                          <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                        </div>
+                        <div class="price-below__fotter">
+                          <!-- Start price -->
+                          <div class="price price_red">
+                            <span class="price__number"> 1000 ₽ </span>
+                            <span class="price__text">Розничная цена</span>
+                          </div>
+                          <!-- End price -->
+                        </div>
+                      </div>
+                    </div>
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price product__price_red">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <div class="price-below price-below_action js-drop js-price-below">
+                      <div class="action-block js-open-drop">%</div>
+                      <div class="price-below__drop js-drop-hidden">
+                        <div class="price-below__info">
+                          <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                          <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                        </div>
+                        <div class="price-below__fotter">
+                          <!-- Start price -->
+                          <div class="price price_red">
+                            <span class="price__number"> 1000 ₽ </span>
+                            <span class="price__text">Розничная цена</span>
+                          </div>
+                          <!-- End price -->
+                        </div>
+                      </div>
+                    </div>
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price product__price_red">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <div class="price-below price-below_action js-drop js-price-below">
+                      <div class="action-block js-open-drop">%</div>
+                      <div class="price-below__drop js-drop-hidden">
+                        <div class="price-below__info">
+                          <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                          <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                        </div>
+                        <div class="price-below__fotter">
+                          <!-- Start price -->
+                          <div class="price price_red">
+                            <span class="price__number"> 1000 ₽ </span>
+                            <span class="price__text">Розничная цена</span>
+                          </div>
+                          <!-- End price -->
+                        </div>
+                      </div>
+                    </div>
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price product__price_red">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <div class="price-below price-below_action js-drop js-price-below">
+                      <div class="action-block js-open-drop">%</div>
+                      <div class="price-below__drop js-drop-hidden">
+                        <div class="price-below__info">
+                          <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                          <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                        </div>
+                        <div class="price-below__fotter">
+                          <!-- Start price -->
+                          <div class="price price_red">
+                            <span class="price__number"> 1000 ₽ </span>
+                            <span class="price__text">Розничная цена</span>
+                          </div>
+                          <!-- End price -->
+                        </div>
+                      </div>
+                    </div>
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price product__price_red">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <div class="price-below price-below_action js-drop js-price-below">
+                      <div class="action-block js-open-drop">%</div>
+                      <div class="price-below__drop js-drop-hidden">
+                        <div class="price-below__info">
+                          <p>Наши держатели карт получают возможность покупать товар по акциям.</p>
+                          <p>Совершите первую покупку на любую сумму и получите карту Члена Клуба в подарок.</p>
+                        </div>
+                        <div class="price-below__fotter">
+                          <!-- Start price -->
+                          <div class="price price_red">
+                            <span class="price__number"> 1000 ₽ </span>
+                            <span class="price__text">Розничная цена</span>
+                          </div>
+                          <!-- End price -->
+                        </div>
+                      </div>
+                    </div>
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price product__price_red">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods__section goods__section_lg">
+          <div class="goods__inner inner">
+            <!-- Start card-collection -->
+            <div class="card-collection">
+              <div class="card-collection__left-col">
+                <div class="card-collection__img img-bg" style="background-image: url(./img/derek-story-unsplash@2x.jpg);">
+                </div>
+              </div>
+              <div class="card-collection__right-col">
+                <div class="head">
+                  <h2 class="title">Коллекция Восточные сказки</h2>
+                  <a href="#" class="head__btn btn btn_md btn_bord btn_anim">
+                    <span class="btn__text">Смотреть</span>
+                    <span class="btn__icon">
+                      <svg class="icon icon-arrow-right">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End card-catalog -->
+          </div>
+        </div>
+        <div class="goods__section">
+          <div class="goods__inner inner">
+            <h2 class="title text-center">Вы недавно смотрели</h2>
+            <div class="row row_psm">
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col_psm col-20 col-md-33 col-sm-50 col-xs-100">
+                <div class="product">
+                  <div class="product__img">
+                    <img src="img/annie-spratt.jpg" alt="">
+                  </div>
+                  <div class="product__wrap">
+                    <div class="product__name"> Наименование товара </div>
+                    <div class="product__price">
+                      <span>1000 ₽</span>
+                      <span class="is-old">1400 ₽</span>
+                    </div>
+                    <div class="product__footer">
+                      <button type="button" class="product__btn btn" type="button">
+                        <svg class="icon icon-shopping-bag">
+                          <use xlink:href="img/sprite.svg#icon-shopping-bag"></use>
+                        </svg> В корзину </button>
+                      <div class="product__like">
+                        <!-- begin likebtn -->
+                        <label class="btn-like">
+                          <span class="like">
+                            <input type="checkbox">
+                            <svg class="icon icon-heart-outline">
+                              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                            </svg>
+                            <svg class="icon icon-heart">
+                              <use xlink:href="img/sprite.svg#icon-heart"></use>
+                            </svg>
+                            <span class="like__lines"></span>
+                          </span>
+                        </label>
+                        <!-- end likebtn -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end goods -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__inner inner">
+          <div class="footer__row row">
+            <div class="footer__col col col-25 col-md-50 col-sm-100">
+              <a href="#" class="footer__title">КЛУБ ДАРЫ ВОСТОКА</a>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">О клубе</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Каталог</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Программа лояльности</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Адреса магазинов</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Сотрудничество/Оптовым</a></li>
+              </ul>
+            </div>
+            <div class="footer__col col col-25 col-md-50 col-sm-100">
+              <a href="#" class="footer__title">ДЛЯ ПОКУПАТЕЛЕЙ</a>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Доставка и самовывоз</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Оплата</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Обратная связь</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Общие вопросы</a></li>
+              </ul>
+            </div>
+            <div class="footer__col col col-25 col-md-50 col-sm-100">
+              <a href="#" class="footer__title">ЮРИДИЧЕСКАЯ ИНФОРМАЦИЯ</a>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Политика безопасности</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Оферта</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Обмен/Возврат товара</a></li>
+              </ul>
+            </div>
+            <div class="footer__col col col-25 col-md-50 col-sm-100">
+              <a href="#" class="footer__title">КОНТАКТЫ</a>
+              <div class="footer__item"><a href="#" class="footer__tel">+7 (495) 661 - 0101</a></div>
+              <ul class="footer__list footer__list_contact">
+                <li class="footer__item">Служба клиентской поддержки</li>
+                <li class="footer__item">пн–вс 9:00 до 18:00</li>
+                <li class="footer__item">сб 9:00 до 16:00</li>
+              </ul>
+              <div class="footer__social social">
+                <a href="#" class="social__link social__link_vk">
+                  <svg class="icon icon-vk">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link social__link_facebook">
+                  <svg class="icon icon-facebook">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link social__link_odnoklassniki">
+                  <svg class="icon icon-odnoklassniki">
+                    <use xlink:href="img/sprite.svg#icon-odnoklassniki"></use>
+                  </svg>
+                </a>
+                <a href="#" class="social__link social__link_instagram">
+                  <svg class="icon icon-instagram">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+              <a href="#" class="footer__hashtag">#Дары_Востока</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="login">
+        <div class="modal__container" data-modal-container>
+          <form action="/" class="modal__form form">
+            <div class="modal__title">Вход в аккаунт</div>
+            <div class="form-control js-form-control">
+              <input type="text" class="input" placeholder="Номер телефона или email" data-validation="required" data-validation-event="keyup change">
+            </div>
+            <div class="form-control js-form-control">
+              <input type="password" class="input input_password" placeholder="Пароль" data-validation="required" data-validation-event="keyup change">
+              <button class="password-show js-password-show" type="button">
+                <svg class="icon icon-eye-closed">
+                  <use xlink:href="img/sprite.svg#icon-eye-closed"></use>
+                </svg>
+                <svg class="icon icon-eye-opened">
+                  <use xlink:href="img/sprite.svg#icon-eye-opened"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="form-question">
+              <a href="#" class="link link_current">Забыли пароль?</a>
+            </div>
+            <div class="form-control">
+              <button class="btn btn_full" type="submit" disabled>ВОЙТИ</button>
+            </div>
+            <div class="form-social social">
+              <a href="#" class="social__link social__link_vk">
+                <svg class="icon icon-vk">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link_facebook">
+                <svg class="icon icon-facebook">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link_odnoklassniki">
+                <svg class="icon icon-odnoklassniki">
+                  <use xlink:href="img/sprite.svg#icon-odnoklassniki"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link_google-plus">
+                <svg class="icon icon-google-plus">
+                  <use xlink:href="img/sprite.svg#icon-google-plus"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="form-footer">Еще не член клуба? <a href="#" class="link link_current">Зарегистрироваться</a></div>
+          </form>
+        </div>
+      </div>
+      <!-- end modal -->
+      <!-- begin modal -->
+      <div class="modal" data-modal="registration">
+        <div class="modal__container" data-modal-container>
+          <form action="/" class="modal__form form">
+            <div class="modal__title">Регистрация</div>
+            <div class="form-control js-form-control">
+              <input type="text" class="input" placeholder="Имя" data-validation="required" data-validation-event="keyup change">
+            </div>
+            <div class="form-control js-form-control">
+              <input type="text" class="input input_password" placeholder="Номер телефона" data-validation="required" data-validation-event="keyup change" data-inputmask="'mask': '+7 (999) 999 99 99'" data-inputmask-placeholder="+7 (   )          ">
+            </div>
+            <div class="form-control js-form-control">
+              <input type="password" class="input input_password" placeholder="Создать пароль" data-validation="required" data-validation-event="keyup change">
+              <button class="password-show js-password-show" type="button">
+                <svg class="icon icon-eye-closed">
+                  <use xlink:href="img/sprite.svg#icon-eye-closed"></use>
+                </svg>
+                <svg class="icon icon-eye-opened">
+                  <use xlink:href="img/sprite.svg#icon-eye-opened"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="form-question">
+              <a href="#" class="link">Использовать email для регистрации</a>
+            </div>
+            <div class="form-checkbox">
+              <label class="checkbox">
+                <input type="checkbox" data-validation="required">
+                <span class="checkbox__text"> Я подтверждаю согласие на обработку своих персональных данных и с <a href="#" class="link">Условиями использования сервиса.</a>
+                </span>
+                <span class="checkbox__icon">
+                  <svg class="icon icon-check">
+                    <use xlink:href="img/sprite.svg#icon-check"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="form-control">
+              <button class="btn btn_full" type="submit" disabled>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+            <div class="form-social social">
+              <a href="#" class="social__link social__link_vk">
+                <svg class="icon icon-vk">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link_facebook">
+                <svg class="icon icon-facebook">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link_odnoklassniki">
+                <svg class="icon icon-odnoklassniki">
+                  <use xlink:href="img/sprite.svg#icon-odnoklassniki"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link social__link_google-plus">
+                <svg class="icon icon-google-plus">
+                  <use xlink:href="img/sprite.svg#icon-google-plus"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="form-footer">Уже зарегистрированы? <a href="#" class="link link_current">Войти</a></div>
+          </form>
+        </div>
+      </div>
+      <!-- end modal -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
